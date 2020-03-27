@@ -32,3 +32,9 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
+
+## ngnixの為追記、https://rollout.io/blog/how-to-deploy-nginx-on-heroku/
+on_worker_fork do
+    FileUtils.touch('/tmp/app-initialized')
+end
+## 追記終わり

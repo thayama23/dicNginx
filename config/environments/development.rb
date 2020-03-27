@@ -58,10 +58,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  ### unicorn設定の為、追記
+  config.logger = ActiveSupport::Logger.new(STDOUT)
+  ### 追記終わり
 end
-
-### unicorn設定の為、追記
-config/environments/development.rb
-　config.logger = ActiveSupport::Logger.new(STDOUT)
-### 追記終わり
-
