@@ -12,6 +12,9 @@ gem 'puma', '~> 3.11'
 gem 'unicorn', '~> 5.5', '>= 5.5.4'
 # gem 'unicorn-rails', '~> 2.2', '>= 2.2.1'
 
+gem 'graphql', '<= 1.7'
+gem 'graphiql-rails', '<= 1.5'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
