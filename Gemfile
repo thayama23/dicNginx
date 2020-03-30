@@ -10,7 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 gem 'unicorn', '~> 5.5', '>= 5.5.4'
-gem 'unicorn-rails', '~> 2.2', '>= 2.2.1'
+# gem 'unicorn-rails', '~> 2.2', '>= 2.2.1'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
